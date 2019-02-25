@@ -1,0 +1,9 @@
+<?php
+readfile($_GET['file']);
+if(isset($_GET['nocach'])){
+	require_once("nocache.php");
+}
+if(($_GET['file']=="1.jpg")or($_GET['file']=="2.jpg")or($_GET['file']=="3.jpg")or($_GET['file']=="4.jpg")or($_GET['file']=="bg.jpg")or($_GET['file']=="style.css")or($_GET['file']=="6.jpg")or($_GET['file']=="7.jpg")or($_GET['file']=="8.jpg")or($_GET['file']=="9.jpg")or($_GET['file']=="10.jpg")){
+	readfile($_GET['file']);
+}
+?>
